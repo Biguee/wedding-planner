@@ -12,6 +12,10 @@ export class CalculatorListComponent implements OnInit {
 
   selected = {};
   edited = null;
+  calculator = [];
+  guests = [];
+
+  sum = 0;
 
 
   private guestSubject = new Subject();
