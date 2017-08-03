@@ -12,18 +12,6 @@ export class CalculatorListComponent implements OnInit {
 
   selected = {};
   edited = null;
-  calculator = [];
-  guests = [];
-
-  sum = 0;
-
-  calculateCost() {
-    console.log(this.calculator.length)
-  }
-
-  calculateGuests() {
-    console.log(this.guests.length)
-  }
 
 
   private guestSubject = new Subject();
@@ -40,7 +28,6 @@ export class CalculatorListComponent implements OnInit {
   select(calculator){
     this.selected = calculator;
     this.edited = Object.assign({}, calculator);
-    console.log(calculator)
   }
 
   private refresh() {

@@ -11,20 +11,6 @@
       <js-calculator-card *ngFor="let calculator of calculator" [calculator]="calculator" [isSelected]="calculator == selected" (selected)="select(calculator)">
 
       </js-calculator-card>
-      <h4 class="ForOnePerson">Cost of one guest: </h4>
-
-      <input type="text" name="costOfOnePerson" class="costOfOnePerson" [(ngModel)]="calculator.cost">
-      <div *ngFor="let guest of guests">
-      <label>{{guests.length}}</label>
-      </div>
-      <br>
-      <!--total cost:-->
-      <button (click)="calculateCost()">Calculate sum of cost</button>
-      <button (click)="calculateGuests()">Calculate guests</button>
-      <!--wynik-->
-      <label> Result</label>
-
-
     </div>
   </div>
 

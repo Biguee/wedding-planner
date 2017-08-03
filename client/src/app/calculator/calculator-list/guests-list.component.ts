@@ -1,7 +1,4 @@
-import {Component, Inject, Input, OnInit} from '@angular/core';
-import {Observable} from "rxjs/Observable";
-import {FormControl, FormGroup} from "@angular/forms";
-import {Subject} from "rxjs/Subject";
+import {Component} from '@angular/core';
 import {GuestsService} from "../guests.service";
 
 @Component({
@@ -15,9 +12,6 @@ export class GuestsListComponent{
   edited = null;
   guests = [];
 
-
-
-  private guestSubject = new Subject();
 
   constructor(private guestService: GuestsService){
   }
