@@ -1,0 +1,31 @@
+<h2 class="title">Calculate cost of the wedding: </h2>
+
+<div class="row">
+
+  <div class="col-md-4">
+    <js-calculator-form *ngIf="edited != null" [calculator]="edited" (save)="save($event)" (cancel)="cancel()"></js-calculator-form>
+  </div>
+
+  <div class="col-md-8">
+    <div class="row justify-content-around">
+      <js-calculator-card *ngFor="let calculator of calculator" [calculator]="calculator" [isSelected]="calculator == selected" (selected)="select(calculator)">
+
+      </js-calculator-card>
+      <h4 class="ForOnePerson">Cost of one guest: </h4>
+
+      <input type="text" name="costOfOnePerson" class="costOfOnePerson" [(ngModel)]="calculator.cost">
+      <div *ngFor="let guest of guests">
+      <label>{{guests.length}}</label>
+      </div>
+      <br>
+      <!--total cost:-->
+      <button (click)="calculateCost()">Calculate sum of cost</button>
+      <button (click)="calculateGuests()">Calculate guests</button>
+      <!--wynik-->
+      <label> Result</label>
+
+
+    </div>
+  </div>
+
+</div>

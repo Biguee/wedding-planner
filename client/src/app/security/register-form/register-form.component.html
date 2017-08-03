@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Transparent login form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
+<body>
+<div id="bg"></div>
+
+<form #registerForm="ngForm" novalidate="true" action="" (ngSubmit)="registerFormMethod()">
+
+  <label for=""></label>
+  <input type="text" name="" id="" name="username" [(ngModel)]="userProfile.login" placeholder="username" class="pass">
+
+  <label for=""></label>
+  <input type="password" name="" id="" name="password" [(ngModel)]="userProfile.password" placeholder="password" class="pass">
+
+  <label for=""></label>
+  <input type="text" name="" id="" name="name" [(ngModel)]="userProfile.userProfileDto.name" placeholder="first name" class="pass">
+
+  <label for=""></label>
+  <input type="text" name="" id="" name="surname" [(ngModel)]="userProfile.userProfileDto.surname" placeholder="last name" class="pass">
+
+  <button type="submit" [disabled]="registerForm.invalid">Sign in </button>
+
+
+</form>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+</body>
+</html>
+<!--<div class="register-form">-->
+  <!--<h5>Sign in!</h5>-->
+  <!--<form #registerForm="ngForm" novalidate="true" (ngSubmit)="registerFormMethod()">-->
+
+    <!--Username:<br>-->
+    <!--<input class="input" type="text" name="username" [(ngModel)]="userProfile.login" required>-->
+    <!--<br>-->
+    <!--Password:<br>-->
+    <!--<input class="input" type="password" name="password" [(ngModel)]="userProfile.password" required>-->
+    <!--<br>-->
+
+    <!--First name:<br>-->
+    <!--<input class="input" type="text" name="name" [(ngModel)]="userProfile.userProfileDto.name" required>-->
+    <!--<br>-->
+
+    <!--Last name:<br>-->
+    <!--<input class="input" type="text" name="surname" [(ngModel)]="userProfile.userProfileDto.surname">-->
+    <!--<br>-->
+    <!--<button type="submit" class="btn btn-danger custom" [disabled]="registerForm.invalid">-->
+      <!--Sign in!-->
+    <!--</button>-->
+    <!--<br>-->
+    <!--<div class="errorText" *ngIf="registerResult == false">Incorrect data :( Please try again!</div>-->
+    <!--<br>-->
+    <!--<h6>Already signed in?</h6>-->
+    <!--<button type="button" routerLink="../login" class="btn btn-success custom">Log in!</button>-->
+
+  <!--</form>-->
+<!--</div>-->

@@ -1,0 +1,11 @@
+<div class="card calculator-card" (click)="select()">
+  <table>
+  <div class="card-block">
+    <tr>
+    <td><h4 class="card-title" [class.active]="isSelected">{{ calculator.name }}</h4></td>
+    <td class="space"><h4 class="card-title">{{ calculator.cost }}</h4></td>
+    </tr>
+  </div>
+  </table>
+  <ng-content select=[calculator-header]></ng-content>
+</div>

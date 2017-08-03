@@ -1,0 +1,13 @@
+<div class="card game-card" (click)="select()">
+  <div class="card-block">
+    <table>
+      <tr>
+        <td><h4 class="card-title" [class.active]="isSelected">{{ game.name }}</h4></td>
+        <td  class="space"><h4 class="card-text" [ngStyle]="authorsStyle">{{ game.description }}</h4></td>
+      </tr>
+
+
+    </table>
+  </div>
+  <ng-content select=[game-header]></ng-content>
+</div>

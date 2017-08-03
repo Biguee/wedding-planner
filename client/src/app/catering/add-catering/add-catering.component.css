@@ -1,0 +1,24 @@
+.btn{
+  color: #000000;
+  background-color: #868a80;
+  border-color: gray;
+  border-color: transparent;
+}
+
+input{
+  width: 380px;
+  background-color: #bfbfbf;
+  border-color: transparent;
+}
+
+select{
+  background-color: #bfbfbf;
+  border-color: transparent;
+}
+
+form{
+  position: fixed; /* or absolute */
+  top: 20%;
+  left: 10%;
+  font-family: 'Limelight', cursive;
+}

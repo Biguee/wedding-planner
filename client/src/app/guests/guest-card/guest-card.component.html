@@ -1,0 +1,16 @@
+<div class="row">
+<div class="card guest-card" (click)="select()">
+  <!--<div class="col-md-offset-2 col-md-2">-->
+
+
+  <div class="card-block">
+    <ul>
+      <h4 class="card-title" [class.active]="isSelected">{{ guest.name }} {{ guest.surname }}</h4>
+        <!--<p class="card-text" [ngStyle]="authorsStyle">{{ guest.surname }}</p></li>-->
+    </ul>
+  </div>
+
+  <ng-content select=[guest-header]></ng-content>
+  <!--</div>-->
+</div>
+</div>

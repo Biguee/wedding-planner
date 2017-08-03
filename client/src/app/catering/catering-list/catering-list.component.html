@@ -1,0 +1,16 @@
+<h2 class="title">Catering: </h2>
+<div class="row">
+
+  <div class="col-md-4">
+    <js-catering-form *ngIf="edited != null" [catering]="edited" (save)="save($event)" (cancel)="cancel()"></js-catering-form>
+  </div>
+
+  <div class="col-md-8">
+    <div class="row justify-content-around">
+      <js-catering-card *ngFor="let catering of catering" [catering]="catering" [isSelected]="catering == selected" (selected)="select(catering)">
+
+      </js-catering-card>
+    </div>
+  </div>
+
+</div>

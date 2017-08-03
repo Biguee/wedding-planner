@@ -1,0 +1,11 @@
+<div class="card catering-card" (click)="select()">
+  <table>
+  <div class="card-block">
+    <tr>
+    <td><h4 class="card-title" [class.active]="isSelected">{{ catering.name }}</h4></td>
+    <td class="space"><h4>{{ catering.kind }}</h4></td>
+    </tr>
+  </div>
+  </table>
+  <ng-content select=[catering-header]></ng-content>
+</div>

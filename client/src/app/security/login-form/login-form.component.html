@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Transparent login form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  </head>
+
+  <body>
+  <div id="bg"></div>
+
+  <form action="" (ngSubmit)="loginFormMethod()">
+
+    <label for=""></label>
+    <input type="text" name="" id="" name="username" [(ngModel)]="username" placeholder="username" class="email">
+
+    <label for=""></label>
+    <input type="password" name="" id="" name="password" [(ngModel)]="password" placeholder="password" class="email">
+
+    <button type="submit" [disabled]="loginForm.invalid  || pendingRequest==true">Log in </button>
+    <!--<p>Dnt have an account?</p>-->
+    <br>
+    <br>
+    <button type="button" routerLink="../register">Sign in </button>
+
+  </form>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+  </body>
+  </html>
+
+<!--<div class="card login-form-card">-->
+<!--<div class="card-header text-center">Log in, please :)</div>-->
+<!--<div class="login-form">-->
+
+<!--<form #loginForm="ngForm" novalidate="true" (ngSubmit)="loginFormMethod()">-->
+
+<!--<div>Username:</div>-->
+<!--<input type="text" name="username" [(ngModel)]="username" required>-->
+<!--<div>Password:</div>-->
+<!--<input type="password" name="password" [(ngModel)]="password" required>-->
+<!--<button type="submit" class="btn btn-success custom" [disabled]="loginForm.invalid  || pendingRequest==true">-->
+<!--<div> Log in </div>-->
+<!--</button>-->
+<!--<div class="errorText" *ngIf="loginError == false">Incorrect data :( Please try again</div>-->
+
+<!--<p>Dnt have an account?</p>-->
+<!--<button type="button" routerLink="../register" class="btn btn-danger custom">Sign in!</button>-->
+
+<!--</form>-->
+
+
+
+<!--</div>-->
+<!--</div>-->
+
+
+
+
+

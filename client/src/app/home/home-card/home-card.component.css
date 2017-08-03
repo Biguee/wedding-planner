@@ -1,0 +1,19 @@
+#header{
+  font-size: 100px;
+  position: fixed; /* or absolute */
+  top: 35%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  /*font-family: 'Lobster', cursive;*/
+  font-family: 'Limelight', cursive;
+}
+
+#text{
+  position: fixed; /* or absolute */
+  top: 45%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  font-family: 'Limelight', cursive;
+}

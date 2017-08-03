@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/weddingplanner
+    username: root
+    password: larysa
+  jpa:
+    hibernate:
+      ddl-auto: update
+security:
+  oauth2:
+    resource:
+      filter-order: 3
+
+---
+spring:
+  profiles: production
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/weddingplanner
+    username: root
+    password: larysa
+  jpa:
+    hibernate:
+      ddl-auto: update

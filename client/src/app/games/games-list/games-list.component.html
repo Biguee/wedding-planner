@@ -1,0 +1,17 @@
+<h2 class="title">Games: </h2>
+<div class="row">
+
+  <div class="col-md-4">
+    <js-games-form *ngIf="edited != null" [game]="edited" (save)="save($event)" (cancel)="cancel()"></js-games-form>
+  </div>
+
+  <div class="col-md-8">
+    <div class="row justify-content-around">
+      <js-games-card *ngFor="let game of games" [game]="game" [isSelected]="game == selected" (selected)="select(game)">
+
+      </js-games-card>
+    </div>
+  </div>
+
+</div>
+
